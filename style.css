@@ -19,20 +19,26 @@
   align-items: center;
   gap: 8px;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .header {
-  font-size: 28px;
+  margin-top: 12px;
+  font-size: 26px;
 }
 
 .prompt-item {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 #new-prompt-button {
-  width: 100px;
-  margin-bottom: 100px;
+  width: 110px;
+  padding: 0px 10px;
+  margin-bottom: 25px;
   font-size: 18px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 16px;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
 }
