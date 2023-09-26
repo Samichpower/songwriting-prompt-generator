@@ -1,4 +1,5 @@
 const promptContainer = document.getElementById('prompt-container');
+const newPromptButton = document.getElementById('new-prompt-button');
 
 const feelings = ['Sinister', 'Happiness', 'Sadness', 'Anger', 'Love', 'Fear', 'Hope', 'Loneliness', 'Excitement', 'Calmness', 'Nostalgia', 'Confidence', 'Mystery', 'Surprise', 'Regret', 'Peace', 'Passion', 'Longing', 'Anxiety', 'Awe', 'Desire', 'Euphoria', 'Grief', 'Curiosity', 'Optimism', 'Discontent', 'Gratitude', 'Pride', 'Tension'];
 const keys = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
@@ -16,4 +17,5 @@ function appendPrompt() {
   promptContainer.innerHTML = `<div>Write a song that sounds like</div> <div><span class="feeling item">${feeling}</span> in <span class="key item">${key}</span> with the <span class="scale item">${scale}</span></div>`;
 }
 
+newPromptButton.addEventListener('click', appendPrompt);
 appendPrompt();
