@@ -9,11 +9,14 @@ function appendPrompt() {
   function getRandomItem(arr) {
     return Math.floor(Math.random() * arr.length);
   }
-  const feeling = feelings[getRandomItem(feelings)];
-  const key = keys[getRandomItem(keys)];
-  const scale = scales[getRandomItem(scales)];
 
-  promptContainer.innerHTML = `<div>Write a song that sounds like</div> <div><span class="feeling item">${feeling}</span> in <span class="key item">${key}</span> with the <span class="scale item">${scale}</span></div>`;
+  const feeling = document.getElementById('feeling');
+  const key = document.getElementById('key');
+  const scale = document.getElementById('scale');
+
+  feeling.textContent = feelings[getRandomItem(feelings)];
+  key.textContent = keys[getRandomItem(keys)];
+  scale.textContent = scales[getRandomItem(scales)];
 }
 
 newPromptButton.addEventListener('click', appendPrompt);
