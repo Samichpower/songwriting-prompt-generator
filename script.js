@@ -5,11 +5,10 @@ const feelings = ['Sinister', 'Happiness', 'Sadness', 'Anger', 'Love', 'Fear', '
 const keys = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 const scales = ['Major (Ionian) Scale', 'Natural Minor (Aeolian) Scale', 'Harmonic Minor Scale', 'Melodic Minor Scale', 'Dorian Mode', 'Phrygian Mode', 'Lydian Mode', 'Mixolydian Mode', 'Locrian Mode', 'Pentatonic Major Scale', 'Pentatonic Minor Scale', 'Blues Scale', 'Hungarian Minor Scale', 'Phrygian Dominant Scale', 'Whole Tone Scale'];
 
-function getRandomItem(arr) {
-  return Math.floor(Math.random() * arr.length);
-}
-
 function appendPrompt() {
+  function getRandomItem(arr) {
+    return Math.floor(Math.random() * arr.length);
+  }
   const feeling = feelings[getRandomItem(feelings)];
   const key = keys[getRandomItem(keys)];
   const scale = scales[getRandomItem(scales)];
