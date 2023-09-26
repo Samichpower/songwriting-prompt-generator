@@ -13,7 +13,7 @@ function appendPrompt() {
   const key = keys[getRandomItem(keys)];
   const scale = scales[getRandomItem(scales)];
 
-  promptContainer.innerHTML = `Write a song that sounds like <span class="feeling item">${feeling}</span> in <span class="key item">${key}</span> with the <span class="scale item">${scale}</span>`;
+  promptContainer.innerHTML = `<div>Write a song that sounds like</div> <div><span class="feeling item">${feeling}</span> in <span class="key item">${key}</span> with the <span class="scale item">${scale}</span></div>`;
 }
 
 appendPrompt();
