@@ -1,4 +1,3 @@
-const promptContainer = document.getElementById('prompt-container');
 const newPromptButton = document.getElementById('new-prompt-button');
 
 const feelings = ['Sinister', 'Happiness', 'Sadness', 'Anger', 'Love', 'Fear', 'Hope', 'Loneliness', 'Excitement', 'Calmness', 'Nostalgia', 'Confidence', 'Mystery', 'Surprise', 'Regret', 'Peace', 'Passion', 'Longing', 'Anxiety', 'Awe', 'Desire', 'Euphoria', 'Grief', 'Curiosity', 'Optimism', 'Discontent', 'Gratitude', 'Pride', 'Tension'];
